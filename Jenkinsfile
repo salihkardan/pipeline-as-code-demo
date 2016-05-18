@@ -34,7 +34,7 @@ node {
 }
 
 def mvn(args) {
-    sh "${tool 'Maven 3.x'}/bin/mvn ${args}"
+    sh "/var/jenkins_home/apache-maven-3.3.9/bin/mvn ${args}"
 }
 
 def runTests(duration) {
